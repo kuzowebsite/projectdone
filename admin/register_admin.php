@@ -62,7 +62,7 @@ if(isset($_POST['submit'])){
       <input type="text" name="name" required placeholder="хэрэглэгчийн нэрээ оруулна уу" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="pass" required placeholder="нууц үгээ оруулна уу" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="cpass" required placeholder="Нууц үгээ батлах" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="submit" value="register now" class="btn" name="submit">
+      <input type="submit" value="Бүртгүүлэх" class="btn" name="submit">
    </form>
 
 </section>

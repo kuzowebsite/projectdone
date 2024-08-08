@@ -34,13 +34,13 @@ if(isset($_POST['update'])){
 
    if(!empty($image_01)){
       if($image_size_01 > 2000000){
-         $message[] = 'image size is too large!';
+         $message[] = 'Зургийн хэмжээ хэт том байна!';
       }else{
          $update_image_01 = $conn->prepare("UPDATE `products` SET image_01 = ? WHERE id = ?");
          $update_image_01->execute([$image_01, $pid]);
          move_uploaded_file($image_tmp_name_01, $image_folder_01);
          unlink('../uploaded_img/'.$old_image_01);
-         $message[] = 'image 01 updated successfully!';
+         $message[] = '1-р зураг амжилттай шинэчлэгдсэн!';
       }
    }
 
@@ -53,13 +53,13 @@ if(isset($_POST['update'])){
 
    if(!empty($image_02)){
       if($image_size_02 > 2000000){
-         $message[] = 'image size is too large!';
+         $message[] = 'Зургийн хэмжээ хэт том байна!';
       }else{
          $update_image_02 = $conn->prepare("UPDATE `products` SET image_02 = ? WHERE id = ?");
          $update_image_02->execute([$image_02, $pid]);
          move_uploaded_file($image_tmp_name_02, $image_folder_02);
          unlink('../uploaded_img/'.$old_image_02);
-         $message[] = 'image 02 updated successfully!';
+         $message[] = '2-р зураг амжилттай шинэчлэгдсэн!';
       }
    }
 
@@ -72,13 +72,13 @@ if(isset($_POST['update'])){
 
    if(!empty($image_03)){
       if($image_size_03 > 2000000){
-         $message[] = 'image size is too large!';
+         $message[] = 'Зургийн хэмжээ хэт том байна!';
       }else{
          $update_image_03 = $conn->prepare("UPDATE `products` SET image_03 = ? WHERE id = ?");
          $update_image_03->execute([$image_03, $pid]);
          move_uploaded_file($image_tmp_name_03, $image_folder_03);
          unlink('../uploaded_img/'.$old_image_03);
-         $message[] = 'image 03 updated successfully!';
+         $message[] = '3-р зураг амжилттай шинэчлэгдсэн!';
       }
    }
 
@@ -130,9 +130,9 @@ if(isset($_POST['update'])){
          </div>
       </div>
       <span>Нэрийг шинэчлэх</span>
-      <input type="text" name="name" required class="box" maxlength="100" placeholder="enter product name" value="<?= $fetch_products['name']; ?>">
+      <input type="text" name="name" required class="box" maxlength="100" placeholder="Бүтээгдэхүүний нэрийг оруулна уу" value="<?= $fetch_products['name']; ?>">
       <span>Үнэ шинэчлэх</span>
-      <input type="number" name="price" required class="box" min="0" max="9999999999" placeholder="enter product price" onkeypress="if(this.value.length == 10) return false;" value="<?= $fetch_products['price']; ?>">
+      <input type="number" name="price" required class="box" min="0" max="9999999999" placeholder="Бүтээгдэхүүний үнийг оруулна уу" onkeypress="if(this.value.length == 10) return false;" value="<?= $fetch_products['price']; ?>">
       <span>Дэлгэрэнгүй мэдээллийг шинэчлэх</span>
       <textarea name="details" class="box" required cols="30" rows="10"><?= $fetch_products['details']; ?></textarea>
       <span>1-р зургийг шинэчилэх</span>
@@ -142,7 +142,7 @@ if(isset($_POST['update'])){
       <span>3-р зургийг шинэчилэх</span>
       <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
       <div class="flex-btn">
-         <input type="submit" name="update" class="btn" value="update">
+         <input type="submit" name="update" class="btn" value="Шинэчлэх">
          <a href="products.php" class="option-btn">Буцах</a>
       </div>
    </form>

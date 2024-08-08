@@ -109,11 +109,11 @@ if(isset($_GET['delete'])){
       <div class="flex">
          <div class="inputBox">
             <span>Бүтээгдэхүүний нэр (шаардлагатай)</span>
-            <input type="text" class="box" required maxlength="100" placeholder="enter product name" name="name">
+            <input type="text" class="box" required maxlength="100" placeholder="Бүтээгдэхүүний нэрийг оруулна уу" name="name">
          </div>
          <div class="inputBox">
             <span>Бүтээгдэхүүний үнэ (шаардлагатай)</span>
-            <input type="number" min="0" class="box" required max="9999999999" placeholder="enter product price" onkeypress="if(this.value.length == 10) return false;" name="price">
+            <input type="number" min="0" class="box" required max="9999999999" placeholder="Бүтээгдэхүүний үнийг оруулна уу" onkeypress="if(this.value.length == 10) return false;" name="price">
          </div>
         <div class="inputBox">
             <span>Зураг 1 (шаардлагатай)</span>
@@ -129,18 +129,18 @@ if(isset($_GET['delete'])){
         </div>
          <div class="inputBox">
             <span>Бүтээгдэхүүний тодорхойлолт (шаардлагатай)</span>
-            <textarea name="details" placeholder="enter product details" class="box" required maxlength="500" cols="30" rows="10"></textarea>
+            <textarea name="details" placeholder="Бүтээгдэхүүний дэлгэрэнгүй мэдээллийг оруулна уу" class="box" required maxlength="500" cols="30" rows="10"></textarea>
          </div>
       </div>
       
-      <input type="submit" value="add product" class="btn" name="add_product">
+      <input type="submit" value="Бүтээгдэхүүн нэмнэ" class="btn" name="add_product">
    </form>
 
 </section>
 
 <section class="show-products">
 
-   <h1 class="heading">Бүтээгдэхүүн нэмсэн</h1>
+   <h1 class="heading">Нэмсэн бүтээгдэхүүн</h1>
 
    <div class="box-container">
 
@@ -153,11 +153,11 @@ if(isset($_GET['delete'])){
    <div class="box">
       <img src="../uploaded_img/<?= $fetch_products['image_01']; ?>" alt="">
       <div class="name"><?= $fetch_products['name']; ?></div>
-      <div class="price">Nrs.<span><?= $fetch_products['price']; ?></span>/-</div>
+      <div class="price">Үнэ : <span><?= $fetch_products['price']; ?></span>₮</div>
       <div class="details"><span><?= $fetch_products['details']; ?></span></div>
       <div class="flex-btn">
          <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">Шинэчлэх</a>
-         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">Устгах</a>
+         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Бүтээгдэхүүнийг устгана уу?');">Устгах</a>
       </div>
    </div>
    <?php

@@ -43,7 +43,7 @@
             <a href="../admin/register_admin.php" class="option-btn">Бүртгүүлэх</a>
             <a href="../admin/admin_login.php" class="option-btn">Нэвтрэх</a>
          </div>
-         <a href="../components/admin_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">Гарах</a> 
+         <a href="../components/admin_logout.php" class="delete-btn" onclick="return confirm('Вэбсайтаас гарах?');">Гарах</a> 
       </div>
 
    </section>

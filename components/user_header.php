@@ -55,7 +55,7 @@
             <a href="user_register.php" class="option-btn">Бүртгүүлэх</a>
             <a href="user_login.php" class="option-btn">Нэвтрэх</a>
          </div>
-         <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">Гарах</a> 
+         <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('вэбсайтаас гарах?');">Гарах</a> 
          <?php
             }else{
          ?>

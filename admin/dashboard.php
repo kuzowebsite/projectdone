@@ -45,7 +45,7 @@ if(!isset($admin_id)){
          <?php
             $total_pendings = 0;
             $select_pendings = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
-            $select_pendings->execute(['pending']);
+            $select_pendings->execute(['Уучлаарай хүлээн үү']);
             if($select_pendings->rowCount() > 0){
                while($fetch_pendings = $select_pendings->fetch(PDO::FETCH_ASSOC)){
                   $total_pendings += $fetch_pendings['total_price'];
@@ -61,14 +61,14 @@ if(!isset($admin_id)){
          <?php
             $total_completes = 0;
             $select_completes = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
-            $select_completes->execute(['completed']);
+            $select_completes->execute(['Хүлээн авсан']);
             if($select_completes->rowCount() > 0){
                while($fetch_completes = $select_completes->fetch(PDO::FETCH_ASSOC)){
                   $total_completes += $fetch_completes['total_price'];
                }
             }
          ?>
-         <h3><span>Nrs.</span><?= $total_completes; ?><span>/-</span></h3>
+         <h3><span>Үнэ : </span><?= $total_completes; ?><span>₮</span></h3>
          <p>Дууссан захиалга</p>
          <a href="placed_orders.php" class="btn">Захиалга харах</a>
       </div>
@@ -91,8 +91,8 @@ if(!isset($admin_id)){
             $number_of_products = $select_products->rowCount()
          ?>
          <h3><?= $number_of_products; ?></h3>
-         <p>Бүтээгдэхүүн нэмсэн</p>
-         <a href="products.php" class="btn">Захиалга харах</a>
+         <p>Бүтээгдэхүүн нэмэх,засах</p>
+         <a href="products.php" class="btn">Бүтээгдэхүүн харах</a>
       </div>
 
       <div class="box">

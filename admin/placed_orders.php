@@ -69,8 +69,8 @@ if(isset($_GET['delete'])){
          <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
          <select name="payment_status" class="select">
             <option selected disabled><?= $fetch_orders['payment_status']; ?></option>
-            <option value="Хүлээлгэх">Хүлээлгэх</option>
-            <option value="Дууссан">Дууссан</option>
+            <option value="Уучлаарай хүлээн үү">Хүлээлгэх</option>
+            <option value="Хүлээн авсан">Дууссан</option>
          </select>
         <div class="flex-btn">
          <input type="submit" value="Шинэчлэх" class="option-btn" name="update_payment">
@@ -81,7 +81,7 @@ if(isset($_GET['delete'])){
    <?php
          }
       }else{
-         echo '<p class="empty">хараахан захиалга өгөөгүй байна!</p>';
+         echo '<p class="empty">Хараахан захиалга өгөөгүй байна!</p>';
       }
    ?>
 

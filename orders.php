@@ -54,7 +54,7 @@ if(isset($_SESSION['user_id'])){
       <p>Хаяг : <span><?= $fetch_orders['address']; ?></span></p>
       <p>Төлбөрийн нөхцөл : <span><?= $fetch_orders['method']; ?></span></p>
       <p>Таны захиалга : <span><?= $fetch_orders['total_products']; ?></span></p>
-      <p>Нийт үнэ : <span>Nrs.<?= $fetch_orders['total_price']; ?>/-</span></p>
+      <p>Нийт үнэ : <span><?= $fetch_orders['total_price']; ?>₮</span></p>
       <p>Төлбөрийн төлөв : <span style="color:<?php if($fetch_orders['payment_status'] == 'pending'){ echo 'red'; }else{ echo 'green'; }; ?>"><?= $fetch_orders['payment_status']; ?></span> </p>
    </div>
    <?php

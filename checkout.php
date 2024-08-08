@@ -120,28 +120,28 @@ if(isset($_POST['order'])){
             </select>
          </div>
          <div class="inputBox">
-            <span>Хаяг 1 :</span>
-            <input type="text" name="flat" placeholder="Ж: Байрны тоо" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>Хаяг 2 :</span>
-            <input type="text" name="street" placeholder="Гудамжны нэр" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
             <span>Хот\Аймаг :</span>
-            <input type="text" name="city" placeholder="Ж: Улаанбаатар" class="box" maxlength="50" required>
+            <input type="text" name="flat" placeholder="Ж: Улаанбаатар" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>Дүүрэг\Бүс :</span>
-            <input type="text" name="state" placeholder="Ж: Сум\Дүүрэг" class="box" maxlength="50" required>
+            <span>Дүүрэг\Сум :</span>
+            <input type="text" name="street" placeholder="Ж: БЗД" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>Улс :</span>
-            <input type="text" name="country" placeholder="Ж: Монгол" class="box" maxlength="50" required>
+            <span>Хороо :</span>
+            <input type="text" name="city" placeholder="Ж: 12" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>БҮСИЙН КОД :</span>
-            <input type="number" min="0" name="pin_code" placeholder="Ж: 56400" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
+            <span>Гудам :</span>
+            <input type="text" name="state" placeholder="Ж: ..н Гудaмж" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>Байр,давхар,тоот\хашааны хаяг :</span>
+            <input type="text" name="country" placeholder="Ж: Сүлд 32A" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>Бүсийн код :</span>
+            <input type="number" min="0" name="pin_code" placeholder="Ж: Map-аас харж болон \ 56400" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
          </div>
       </div>
 

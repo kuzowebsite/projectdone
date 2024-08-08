@@ -224,7 +224,6 @@ section{
 
 .header .flex .navbar a:hover{
    color:var(--main-color);
-   text-decoration: underline;
 }
 
 .header .flex .icons div{
