@@ -63,7 +63,7 @@ if(isset($_POST['send'])){
 
    <form action="" method="post">
       <h3>Холбогдох</h3>
-      <input type="text" name="name" placeholder="Нэрээ оруулна ууe" required maxlength="20" class="box">
+      <input type="text" name="name" placeholder="Нэрээ оруулна уу" required maxlength="20" class="box">
       <input type="email" name="email" placeholder="Имэйлээ оруулна уу" required maxlength="50" class="box">
       <input type="number" name="number" min="0" max="9999999999" placeholder="Дугаараа оруулна уу" required onkeypress="if(this.value.length == 10) return false;" class="box">
       <textarea name="msg" class="box" placeholder="Мессежээ оруулна уу" cols="30" rows="10"></textarea>

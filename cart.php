@@ -91,8 +91,8 @@ if(isset($_POST['update_qty'])){
    <div class="cart-total">
       <p>Нийт үнэ : <span><?= $grand_total; ?>₮</span></p>
       <a href="shop.php" class="option-btn">Дахин бараа нэмэх</a>
-      <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">Бүх зүйлийг устгах</a>
-      <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Төлбөр тооцоог үргэлжлүүлэх</a>
+      <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('Бүх барааг сагсаас устгах?');">Бүх барааг сагсаас устгах</a>
+      <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Худалдан авах</a>
    </div>
 
 </section>

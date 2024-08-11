@@ -73,7 +73,7 @@ if(isset($_GET['delete_all'])){
          <div class="price">Үнэ : <?= $fetch_wishlist['price']; ?>₮</div>
          <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
       </div>
-      <input type="submit" value="Картанд нэмэх" class="btn" name="add_to_cart">
+      <input type="submit" value="Сагсанд нэмэх" class="btn" name="add_to_cart">
       <input type="submit" value="Устгах" onclick="return confirm('Хүслийн жагсаалтаас устгана уу?');" class="delete-btn" name="delete">
    </form>
    <?php

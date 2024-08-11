@@ -80,7 +80,7 @@ if(!isset($admin_id)){
             $number_of_orders = $select_orders->rowCount()
          ?>
          <h3><?= $number_of_orders; ?></h3>
-         <p>Захиалга өгсөн</p>
+         <p>Захиалга ирсэн</p>
          <a href="placed_orders.php" class="btn">Захиалга харах</a>
       </div>
 

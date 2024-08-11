@@ -50,7 +50,7 @@ include 'components/wishlist_cart.php';
          <div class="content">
             <span>50% хүртэл хямдралтай</span>
             <h3>Хамгийн сүүлийн үеийн ухаалаг гар утаснууд</h3>
-            <a href="category.php?category=smartphone" class="btn">Бараа үзэх</a>
+            <a href="category.php?category=phone" class="btn">Бараа үзэх</a>
          </div>
       </div>
 
@@ -72,7 +72,7 @@ include 'components/wishlist_cart.php';
          <div class="content">
             <span>50% хүртэл хямдралтай</span>
             <h3>Хамгийн сүүлийн үеийн чихэвч</h3>
-            <a href="shop.php" class="btn">Бараа үзэх</a>
+            <a href="category.php?category=headphones" class="btn">Бараа үзэх</a>
          </div>
       </div>
 
@@ -94,9 +94,9 @@ include 'components/wishlist_cart.php';
 
    <div class="swiper-wrapper">
 
-   <a href="category.php?category=laptop" class="swiper-slide slide">
+   <a href="category.php?category=PC" class="swiper-slide slide">
       <img src="images/icon-1.png" alt="">
-      <h3>Зөөврийн компьютер</h3>
+      <h3>Компьютер</h3>
    </a>
 
    <a href="category.php?category=tv" class="swiper-slide slide">
@@ -124,7 +124,7 @@ include 'components/wishlist_cart.php';
       <h3>Угаалгын машин</h3>
    </a>
 
-   <a href="category.php?category=smartphone" class="swiper-slide slide">
+   <a href="category.php?category=phone" class="swiper-slide slide">
       <img src="images/icon-7.png" alt="">
       <h3>Гар утас</h3>
    </a>
@@ -169,7 +169,7 @@ include 'components/wishlist_cart.php';
          <div class="price"><span>Үнэ : </span><?= $fetch_product['price']; ?><span>₮</span></div>
          <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
       </div>
-      <input type="submit" value="Картанд нэмэх" class="btn" name="add_to_cart">
+      <input type="submit" value="Сагсанд нэмэх" class="btn" name="add_to_cart">
    </form>
    <?php
       }

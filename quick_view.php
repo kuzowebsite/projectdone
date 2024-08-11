@@ -68,7 +68,7 @@ include 'components/wishlist_cart.php';
             </div>
             <div class="details"><?= $fetch_product['details']; ?></div>
             <div class="flex-btn">
-               <input type="submit" value="Картанд нэмэх" class="btn" name="add to cart">
+               <input type="submit" value="Сагсанд нэмэх" class="btn" name="add to cart">
                <input class="option-btn" type="submit" name="add to wishlist" value="Хүслийн жагсаалтад нэмэх">
             </div>
          </div>
